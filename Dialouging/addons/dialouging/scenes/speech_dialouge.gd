@@ -23,5 +23,9 @@ func _on_speech_edit_text_changed(new_text):
 
 
 func _on_delete_request():
+	var connections = get_parent().get_connection_list()
+	for connection in connections:
+		if connection.from_node == name or connection.to_node == name:
+			get_parent().disconnect_node(connection.from_node, connection.from_port, connection.to_node, connection.to_port)
 	get_parent().remove_child(self)
 	queue_free()

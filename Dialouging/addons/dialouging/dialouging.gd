@@ -13,7 +13,7 @@ func _exit_tree():
 
 
 func _handles(object):
-	if object is Dialouge:
+	if object is Dialogue:
 		bottom_panel_editor = object.editor
 		return true
 	return false

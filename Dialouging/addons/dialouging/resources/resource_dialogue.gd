@@ -1,7 +1,7 @@
 @tool
-@icon("res://addons/dialouging/resources/resource_dialouge_icon.png")
+@icon("res://addons/dialouging/resources/resource_dialogue_icon.png")
 extends Resource
-class_name Dialouge
+class_name Dialogue
 
 var editor
 var current = null
